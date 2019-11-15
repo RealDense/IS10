@@ -11,7 +11,7 @@ Bugs to vladimir dot kulyukin at aggiemail dot usu dot edu
 (in-package :user)
 
 ;;; change this to the directory where the ca files are.
-(defparameter *ca-dir* "/home/vladimir/teaching/AI/F19/hw/hw10_f19/hw10/ca_sam/")
+(defparameter *ca-dir* "/home/riley/IS/IS10/")
 
 (defparameter *files* '("ca-utilities" "cd" "ca" "ca-functions" "ca-lexicon"))
 

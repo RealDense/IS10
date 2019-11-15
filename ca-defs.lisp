@@ -22,7 +22,8 @@ bugs to vladimir kulyukin dot usu dot edu
 (define-ca-word
     ann
     ;;; your code here
-    )
+    (concept nil (human :name (ann) :sex (female))))
+    
 
 (define-ca-word 
     ate
@@ -35,17 +36,24 @@ bugs to vladimir kulyukin dot usu dot edu
 (define-ca-word
     bought
     ;;; your code here
-    )
+    (concept ?act (atrans :time (past)))
+    (request (test (before ?act ?actor (animate)))
+	     (actions (modify ?act :actor ?actor)))
+    (request (test (after ?act ?merch (phys-obj)))
+	     (actions (modify ?act :object ?merch))))
+    
 
 (define-ca-word
     kite
     ;;; your code here
-    )
+    (concept nil (kite)))
+    
 
 (define-ca-word
     store
     ;;; your code here
-    )
+    (concept nil (store)))
+    
 
 (define-ca-word
     went
